@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sacca Engineering | Steel Fabrication &amp; Site Welding – Golden Grove, SA</title>
+<meta name="description" content="Sacca Engineering – steel fabrication, installation and site welding based in Golden Grove, SA, serving Adelaide. Call 0421 963 094." />
+<meta name="theme-color" content="#1a1a1a" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231a1a1a'/%3E%3Ctext x='34' y='64' font-family='Oswald, sans-serif' font-weight='700' font-style='italic' font-size='46' fill='%23ffffff' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='68' y='64' font-family='Oswald, sans-serif' font-weight='700' font-style='italic' font-size='46' fill='%234caf50' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#1a1a1a;
+    --dark:#222222;
+    --green:#4caf50;
+    --green-bright:#5cd65c;
+    --white:#ffffff;
+    --gray-light:#f4f5f4;
+    --gray-mid:#6b6b6b;
+    --max-width:1180px;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:'Roboto',sans-serif;
+    color:var(--black);
+    line-height:1.6;
+    background:var(--white);
+  }
+
+  h1,h2,h3,h4{
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    line-height:1.2;
+  }
+
+  a{text-decoration:none;color:inherit;}
+
+  img{max-width:100%;display:block;}
+
+  /* Accessible focus states */
+  a:focus-visible,
+  button:focus-visible{
+    outline:2px solid var(--green-bright);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  /* Offset anchor targets so the sticky header doesn't cover them */
+  section{scroll-margin-top:76px;}
+
+  .container{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ===== Buttons ===== */
+  .btn{
+    display:inline-block;
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:600;
+    padding:14px 30px;
+    border-radius:4px;
+    border:2px solid transparent;
+    transition:all .2s ease;
+    cursor:pointer;
+  }
+  .btn-primary{
+    background:var(--green);
+    color:var(--black);
+  }
+  .btn-primary:hover{
+    background:var(--green-bright);
+  }
+  .btn-outline{
+    background:transparent;
+    color:var(--white);
+    border-color:var(--white);
+  }
+  .btn-outline:hover{
+    background:var(--white);
+    color:var(--black);
+  }
+
+  /* ===== Logo (SVG mark + text lockup) ===== */
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .brand-mark{
+    display:block;
+    flex-shrink:0;
+    border-radius:50%;
+  }
+  .brand-mark circle{fill:var(--black);}
+  .brand-mark .mark-s{fill:var(--white);}
+  .brand-mark .mark-e{fill:var(--green);}
+  header .brand-mark{width:40px;height:40px;}
+  .brand-text{
+    font-family:'Oswald',sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    line-height:1.05;
+    letter-spacing:0.5px;
+  }
+  header .brand-text{
+    color:var(--white);
+    font-size:15px;
+  }
+  header .brand-text .sub{
+    display:block;
+    color:var(--green-bright);
+    font-size:11px;
+    letter-spacing:2px;
+    font-weight:600;
+  }
+  .footer-brand .brand-mark{width:34px;height:34px;}
+  .footer-brand .brand-text{
+    color:var(--white);
+    font-size:14px;
+  }
+  .footer-brand .brand-text .sub{
+    display:block;
+    color:#999;
+    font-size:10px;
+    letter-spacing:2px;
+    font-weight:600;
+  }
+  .hero-brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:28px;
+  }
+  .hero-brand .brand-mark{width:64px;height:64px;}
+  .hero-brand .brand-text{
+    color:var(--white);
+    font-size:24px;
+    letter-spacing:1px;
+  }
+  .hero-brand .brand-text .sub{
+    display:block;
+    color:var(--green-bright);
+    font-size:13px;
+    letter-spacing:3px;
+    font-weight:600;
+    margin-top:2px;
+  }
+
+  /* ===== Header ===== */
+  header.site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:var(--black);
+    border-bottom:3px solid var(--green);
+  }
+  header .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 24px;
+  }
+  nav.main-nav ul{
+    display:flex;
+    list-style:none;
+    gap:32px;
+  }
+  nav.main-nav a{
+    color:var(--white);
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    font-size:14px;
+    letter-spacing:1px;
+    font-weight:500;
+    transition:color .2s ease;
+  }
+  nav.main-nav a:hover{
+    color:var(--green-bright);
+  }
+  .header-right{
+    display:flex;
+    align-items:center;
+    gap:24px;
+  }
+  .header-phone{
+    color:var(--white);
+    font-family:'Oswald',sans-serif;
+    font-weight:600;
+    font-size:16px;
+    letter-spacing:1px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .header-phone svg{fill:var(--green-bright);}
+
+  .menu-toggle{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    background:none;
+    border:none;
+  }
+  .menu-toggle span{
+    width:26px;
+    height:3px;
+    background:var(--white);
+    border-radius:2px;
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+    background:linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 60%, #1a1a1a 100%);
+    color:var(--white);
+    padding:90px 0 100px;
+    position:relative;
+    overflow:hidden;
+    border-bottom:5px solid var(--green);
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    right:-10%;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle, rgba(76,175,80,0.18) 0%, rgba(76,175,80,0) 70%);
+  }
+  .hero-content{
+    position:relative;
+    z-index:2;
+    max-width:680px;
+  }
+  .hero-eyebrow{
+    color:var(--green-bright);
+    font-family:'Oswald',sans-serif;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:48px;
+    margin-bottom:18px;
+  }
+  .hero h1 .accent{color:var(--green-bright);}
+  .hero p.lead{
+    font-size:18px;
+    font-weight:300;
+    color:#dcdcdc;
+    margin-bottom:32px;
+    max-width:560px;
+  }
+  .hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+
+  /* ===== Section generic ===== */
+  section{
+    padding:80px 0;
+  }
+  .section-header{
+    text-align:center;
+    max-width:680px;
+    margin:0 auto 50px;
+  }
+  .section-header .eyebrow{
+    color:var(--green);
+    font-family:'Oswald',sans-serif;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  .section-header h2{
+    font-size:32px;
+    margin-bottom:14px;
+    color:var(--black);
+  }
+  .section-header p{
+    color:var(--gray-mid);
+    font-size:16px;
+  }
+
+  /* ===== About ===== */
+  .about{
+    background:var(--gray-light);
+  }
+  .about-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:50px;
+    align-items:center;
+  }
+  .about-text h2{
+    font-size:30px;
+    margin-bottom:18px;
+    color:var(--black);
+  }
+  .about-text p{
+    color:#444;
+    margin-bottom:16px;
+    font-size:16px;
+  }
+  .about-text .eyebrow{
+    color:var(--green);
+    font-family:'Oswald',sans-serif;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:10px;
+    display:block;
+  }
+  .about-points{
+    list-style:none;
+    margin-top:20px;
+  }
+  .about-points li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:12px;
+    font-weight:500;
+  }
+  .about-points svg{
+    flex-shrink:0;
+    fill:var(--green);
+    margin-top:3px;
+  }
+  .about-card{
+    background:var(--black);
+    color:var(--white);
+    border-radius:8px;
+    padding:40px;
+    border-left:6px solid var(--green);
+  }
+  .about-card h3{
+    font-size:22px;
+    margin-bottom:16px;
+    color:var(--green-bright);
+  }
+  .about-card p{
+    color:#ddd;
+    margin-bottom:14px;
+  }
+  .about-card .tagline{
+    font-family:'Oswald',sans-serif;
+    font-size:20px;
+    font-style:italic;
+    text-transform:none;
+    color:var(--white);
+    border-top:1px solid #444;
+    padding-top:16px;
+    margin-top:16px;
+  }
+
+  /* ===== Services ===== */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+  }
+  .service-card{
+    background:var(--white);
+    border:1px solid #e6e6e6;
+    border-radius:8px;
+    padding:32px 26px;
+    text-align:left;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .service-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(0,0,0,0.08);
+    border-color:var(--green);
+  }
+  .service-card .icon{
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    background:var(--black);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px;
+  }
+  .service-card .icon svg{
+    fill:var(--green-bright);
+    width:26px;
+    height:26px;
+  }
+  .service-card h3{
+    font-size:18px;
+    margin-bottom:10px;
+    color:var(--black);
+  }
+  .service-card p{
+    font-size:14.5px;
+    color:var(--gray-mid);
+  }
+
+  /* ===== Work / Recent Projects ===== */
+  .work{
+    background:var(--gray-light);
+  }
+  .work-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+  }
+  .work-card{
+    background:var(--white);
+    border-radius:8px;
+    overflow:hidden;
+    border:1px solid #e6e6e6;
+    display:flex;
+    flex-direction:column;
+  }
+  .work-card .work-media{
+    background:linear-gradient(135deg,#1f1f1f,#2f2f2f);
+    color:var(--green-bright);
+    height:160px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Oswald',sans-serif;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:14px;
+    position:relative;
+  }
+  .work-card .work-media svg{
+    width:42px;
+    height:42px;
+    fill:var(--green-bright);
+  }
+  .work-card .work-body{
+    padding:22px 24px;
+  }
+  .work-card .work-date{
+    font-family:'Oswald',sans-serif;
+    color:var(--green);
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:700;
+    margin-bottom:6px;
+    text-transform:uppercase;
+  }
+  .work-card h3{
+    font-size:18px;
+    margin-bottom:8px;
+    color:var(--black);
+  }
+  .work-card p{
+    font-size:14.5px;
+    color:var(--gray-mid);
+  }
+  .ig-embed{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    background:var(--white);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .ig-embed iframe{
+    border-radius:8px !important;
+  }
+  .work-footer{
+    text-align:center;
+    margin-top:40px;
+  }
+  .work-footer p{
+    color:var(--gray-mid);
+    margin-bottom:14px;
+  }
+  .ig-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Oswald',sans-serif;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--black);
+    border:2px solid var(--black);
+    padding:12px 26px;
+    border-radius:4px;
+    transition:all .2s ease;
+  }
+  .ig-link:hover{
+    background:var(--black);
+    color:var(--white);
+  }
+  .ig-link svg{fill:currentColor;}
+
+  /* ===== Contact ===== */
+  .contact{
+    background:var(--black);
+    color:var(--white);
+  }
+  .contact .section-header h2{color:var(--white);}
+  .contact .section-header p{color:#bbb;}
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:stretch;
+  }
+  .contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+  }
+  .contact-item{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    background:#262626;
+    padding:22px;
+    border-radius:8px;
+    border-left:4px solid var(--green);
+  }
+  .contact-item .icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:var(--green);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+  }
+  .contact-item .icon svg{
+    fill:var(--black);
+    width:22px;
+    height:22px;
+  }
+  .contact-item h4{
+    font-size:14px;
+    letter-spacing:2px;
+    color:var(--green-bright);
+    margin-bottom:4px;
+  }
+  .contact-item p, .contact-item a{
+    font-size:16px;
+    color:var(--white);
+    font-weight:500;
+  }
+  .contact-item a:hover{color:var(--green-bright);}
+  .map-wrap{
+    border-radius:8px;
+    overflow:hidden;
+    min-height:320px;
+    border:3px solid var(--green);
+  }
+  .map-wrap iframe{
+    width:100%;
+    height:100%;
+    min-height:320px;
+    border:0;
+    display:block;
+  }
+
+  /* ===== Footer ===== */
+  footer.site-footer{
+    background:#111;
+    color:#999;
+    padding:36px 0;
+  }
+  .footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+  .footer-links{
+    display:flex;
+    gap:24px;
+    align-items:center;
+  }
+  .footer-links a{
+    color:#999;
+    transition:color .2s ease;
+  }
+  .footer-links a:hover{color:var(--green-bright);}
+  .footer-bottom{
+    text-align:center;
+    margin-top:24px;
+    padding-top:20px;
+    border-top:1px solid #2a2a2a;
+    font-size:13px;
+    color:#777;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width:900px){
+    .about-grid, .contact-grid{grid-template-columns:1fr;}
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .work-grid{grid-template-columns:1fr;}
+    .hero h1{font-size:36px;}
+  }
+  @media (max-width:700px){
+    nav.main-nav{
+      position:absolute;
+      top:100%;
+      left:0;
+      right:0;
+      background:var(--black);
+      flex-direction:column;
+      display:none;
+      border-bottom:3px solid var(--green);
+    }
+    nav.main-nav.open{display:flex;}
+    nav.main-nav ul{
+      flex-direction:column;
+      padding:20px 24px;
+      gap:18px;
+    }
+    .menu-toggle{display:flex;}
+    .header-phone span.phone-text{display:none;}
+    .services-grid{grid-template-columns:1fr;}
+    .hero{padding:60px 0 70px;}
+    .hero h1{font-size:30px;}
+    section{padding:56px 0;}
+    .footer-inner{flex-direction:column;text-align:center;}
+    .hero-brand{gap:14px;}
+    .hero-brand .brand-mark{width:48px;height:48px;}
+    .hero-brand .brand-text{font-size:19px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container">
+    <a href="#home" class="brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-label="Sacca Engineering">
+        <circle cx="50" cy="50" r="50"/>
+        <text x="34" y="64" class="mark-s" font-family="Oswald, sans-serif" font-weight="700" font-style="italic" font-size="46" text-anchor="middle">S</text>
+        <text x="68" y="64" class="mark-e" font-family="Oswald, sans-serif" font-weight="700" font-style="italic" font-size="46" text-anchor="middle">E</text>
+      </svg>
+      <span class="brand-text">Sacca<span class="sub">Engineering</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:0421963094" class="header-phone">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span class="phone-text">0421 963 094</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="hero-brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-label="Sacca Engineering">
+        <circle cx="50" cy="50" r="50"/>
+        <text x="34" y="64" class="mark-s" font-family="Oswald, sans-serif" font-weight="700" font-style="italic" font-size="46" text-anchor="middle">S</text>
+        <text x="68" y="64" class="mark-e" font-family="Oswald, sans-serif" font-weight="700" font-style="italic" font-size="46" text-anchor="middle">E</text>
+      </svg>
+      <span class="brand-text">Sacca<span class="sub">Engineering</span></span>
+    </div>
+    <div class="hero-eyebrow">Golden Grove, SA &middot; Serving Greater Adelaide</div>
+    <h1>Fabricate Your Steel <span class="accent">to Perfection</span></h1>
+    <p class="lead">Sacca Engineering delivers reliable steel fabrication, installation and site welding for residential and construction projects across Adelaide.</p>
+    <div class="hero-buttons">
+      <a href="tel:0421963094" class="btn btn-primary">Call 0421 963 094</a>
+      <a href="mailto:saccaengineering@iinet.net.au" class="btn btn-outline">Get a Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-text">
+      <span class="eyebrow">About Us</span>
+      <h2>Steel Fabrication &amp; Site Welding</h2>
+      <p>Sacca Engineering is a steel fabrication and site welding business based at Golden Grove, South Australia, working on residential and construction projects throughout the greater Adelaide area.</p>
+      <p>From structural steel frames for new builds to custom fabrication work, every job is built to fit and finished on site.</p>
+      <ul class="about-points">
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Structural steel fabrication for new builds
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          On-site steel installation and site welding
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Custom fabrication: gates, frames &amp; outdoor steel features
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Licensed builder &ndash; BLD 269543
+        </li>
+      </ul>
+    </div>
+    <div class="about-card">
+      <h3>Sacca Engineering</h3>
+      <p>Steel Fabrication &amp; Installation</p>
+      <p>Site Welding</p>
+      <p>2/6 Aristotle Close, Golden Grove SA 5125</p>
+      <p class="tagline">&ldquo;Fabricate your steel to perfection.&rdquo;</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">What We Do</div>
+      <h2>Our Services</h2>
+      <p>Steel fabrication and welding services for builders, tradespeople and homeowners across Adelaide.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+        </div>
+        <h3>Structural Steel Fabrication</h3>
+        <p>Fabrication of structural steel frames and components, built to spec for new residential and commercial builds.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2 2 7v2h20V7L12 2zM2 17h20v2H2v-2zm2-6h2v5H4v-5zm4 0h2v5H8v-5zm4 0h2v5h-2v-5zm4 0h2v5h-2v-5z"/></svg>
+        </div>
+        <h3>Steel Installation</h3>
+        <p>On-site installation of fabricated steel structures and frames, fitted and finished on location.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+        </div>
+        <h3>Site Welding</h3>
+        <p>Professional site welding for construction and fabrication projects, completed safely and to a high standard.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M22.61 18.99l-9.83-9.83.71-.71c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0L1.29 13.34c-.39.39-.39 1.02 0 1.41l2.34 2.34c.39.39 1.02.39 1.41 0l.71-.71 9.83 9.83c.39.39 1.02.39 1.41 0l5.62-5.62c.39-.39.39-1.02 0-1.41z"/></svg>
+        </div>
+        <h3>Custom Steel Fabrication</h3>
+        <p>Custom-made steel work including gates, window frames and outdoor features such as charcoal barbecues, built to your specifications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Recent Work ===== -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Recent Projects</div>
+      <h2>Our Work</h2>
+      <p>A look at some recent jobs around Adelaide. Follow us on Instagram for ongoing project updates and photos.</p>
+    </div>
+    <div class="work-grid">
+      <div class="ig-embed">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DTzTDNSESPc/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);"></blockquote>
+      </div>
+      <div class="ig-embed">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DQ29hSAjZYa/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);"></blockquote>
+      </div>
+      <div class="ig-embed">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DRdmi0qk885/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);"></blockquote>
+      </div>
+      <div class="ig-embed">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DRiw_dpiQfI/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);"></blockquote>
+      </div>
+    </div>
+    <script async src="//www.instagram.com/embed.js"></script>
+    <div class="work-footer">
+      <p>See more of our work on Instagram</p>
+      <a href="https://www.instagram.com/saccaengineering/" target="_blank" rel="noopener" class="ig-link">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zM17.5 6a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/></svg>
+        @saccaengineering
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Get In Touch</div>
+      <h2>Contact Sacca Engineering</h2>
+      <p>Get in touch for a quote on steel fabrication, installation or site welding.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <div>
+            <h4>PHONE</h4>
+            <a href="tel:0421963094">0421 963 094</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <h4>EMAIL</h4>
+            <a href="mailto:saccaengineering@iinet.net.au">saccaengineering@iinet.net.au</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+          </div>
+          <div>
+            <h4>ADDRESS</h4>
+            <p>2/6 Aristotle Close, Golden Grove SA 5125</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zM17.5 6a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/></svg>
+          </div>
+          <div>
+            <h4>INSTAGRAM</h4>
+            <a href="https://www.instagram.com/saccaengineering/" target="_blank" rel="noopener">@saccaengineering</a>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=2/6+Aristotle+Close,+Golden+Grove+SA+5125&output=embed"
+          title="Sacca Engineering location map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="brand footer-brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-label="Sacca Engineering">
+        <circle cx="50" cy="50" r="50"/>
+        <text x="34" y="64" class="mark-s" font-family="Oswald, sans-serif" font-weight="700" font-style="italic" font-size="46" text-anchor="middle">S</text>
+        <text x="68" y="64" class="mark-e" font-family="Oswald, sans-serif" font-weight="700" font-style="italic" font-size="46" text-anchor="middle">E</text>
+      </svg>
+      <span class="brand-text">Sacca<span class="sub">Engineering</span></span>
+    </div>
+    <div class="footer-links">
+      <a href="tel:0421963094">0421 963 094</a>
+      <a href="mailto:saccaengineering@iinet.net.au">Email</a>
+      <a href="https://www.instagram.com/saccaengineering/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Sacca Engineering &mdash; Steel Fabrication &amp; Installation, Site Welding &mdash; Builder Licence BLD 269543
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('main-nav');
+  toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => nav.classList.remove('open'));
+  });
+</script>
+</body>
+</html>
